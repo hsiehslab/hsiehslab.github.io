@@ -6,30 +6,34 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  
+  /* --- 頁面與文字顏色 --- */
+  --global-bg-color: #F1F2ED; /* 修改：使用淺米灰背景 */
+  --global-card-bg-color: #F9F8F4; /* 修改：使用淺米白卡片背景 */
+  --global-text-color: #333333; /* 修改：使用深灰色主要文字 */
+  --global-text-color-light: #7A7A7A; /* 修改：使用中灰色次要文字 */
+  --global-divider-color: rgba(42, 74, 106, 0.2); /* 修改：使用品牌藍的透明色 */
+  --global-code-bg-color: #F9F8F4; /* 修改：程式碼背景同卡片 */
 
+  /* --- 品牌與主題顏色 --- */
+  --global-theme-color: #2A4A6A; /* 修改：使用品牌深藍色 */
+  --global-hover-color: #217BF4; /* 修改：使用亮藍色作為懸停色 */
+  --global-hover-text-color: #FFFFFF;
+  --global-highlight-color: #2A9D8F; /* 修改：使用藍綠色作為高亮 (原為紅色) */
+
+  /* --- 頁腳 (Footer) --- */
+  --global-footer-bg-color: #2A4A6A; /* 修改：使用品牌深藍色 */
+  --global-footer-text-color: #A0AEC0; /* 修改：使用淺灰色文字 (在深藍背景上) */
+  --global-footer-link-color: #FFFFFF; /* 修改：使用白色連結 (在深藍背景上) */
+
+  /* --- 其他組件 --- */
+  --global-distill-app-color: #7A7A7A;
+  --global-back-to-top-bg-color: rgba(42, 74, 106, 0.7); /* 修改：使用半透明品牌深藍 */
+  --global-back-to-top-text-color: #FFFFFF;
+  --global-newsletter-bg-color: #F9F8F4;
+  --global-newsletter-text-color: #333333;
+
+  /* --- 功能性顏色 (保持不變) --- */
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -48,23 +52,18 @@
     padding-top: 12px;
     display: block;
   }
-
   #light-toggle-dark {
     display: none;
   }
-
   #light-toggle-light {
     display: none;
   }
-
   .only-light {
     display: block;
   }
-
   .only-dark {
     display: none;
   }
-
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
@@ -78,29 +77,33 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
 
+  /* --- 頁面與文字顏色 --- */
+  --global-bg-color: #1A202C; /* 修改：使用深海軍藍背景 */
+  --global-card-bg-color: #242C3C; /* 修改：使用深灰藍卡片背景 */
+  --global-text-color: #F1F2ED; /* 修改：使用淺米灰主要文字 */
+  --global-text-color-light: #A0AEC0; /* 修改：使用淺灰色次要文字 */
+  --global-divider-color: rgba(241, 242, 237, 0.2); /* 修改：使用淺色文字的透明色 */
+  --global-code-bg-color: #1A202C; /* 修改：程式碼背景同頁面 */
+  
+  /* --- 品牌與主題顏色 --- */
+  --global-theme-color: #2A9D8F; /* 修改：使用藍綠色 (在深色上更突出) */
+  --global-hover-color: #217BF4; /* 修改：使用亮藍色作為懸停色 */
+  --global-hover-text-color: #FFFFFF;
+
+  /* --- 頁腳 (Footer) --- */
+  --global-footer-bg-color: #1A202C; /* 修改：頁腳同頁面背景 */
+  --global-footer-text-color: #A0AEC0; /* 修改：使用淺灰色文字 */
+  --global-footer-link-color: #F1F2ED; /* 修改：使用主要淺色文字 */
+
+  /* --- 其他組件 --- */
+  --global-distill-app-color: #A0AEC0;
+  --global-back-to-top-bg-color: rgba(241, 242, 237, 0.7); /* 修改：使用半透明淺色 */
+  --global-back-to-top-text-color: #1A202C; /* 修改：使用深色文字 (在淺色按鈕上) */
+  --global-newsletter-bg-color: #242C3C;
+  --global-newsletter-text-color: #F1F2ED;
+  
+  /* --- 功能性顏色 (保持不變) --- */
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -117,27 +120,24 @@ html[data-theme="dark"] {
   .only-light {
     display: none;
   }
-
   .only-dark {
     display: block;
   }
 }
 
+/* --- 以下為主題切換器邏輯 (保持不變) --- */
 html[data-theme-setting="dark"] {
   #light-toggle-system {
     display: none;
   }
-
   #light-toggle-dark {
     padding-left: 10px;
     padding-top: 12px;
     display: block;
   }
-
   #light-toggle-light {
     display: none;
   }
-
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
@@ -148,11 +148,9 @@ html[data-theme-setting="light"] {
   #light-toggle-system {
     display: none;
   }
-
   #light-toggle-dark {
     display: none;
   }
-
   #light-toggle-light {
     padding-left: 10px;
     padding-top: 12px;
