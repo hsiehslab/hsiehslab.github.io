@@ -15,6 +15,9 @@
   --global-text-color-light: #7A7A7A; /* 修改：使用中灰色次要文字 */
   --global-divider-color: rgba(42, 74, 106, 0.2); /* 修改：使用品牌藍的透明色 */
   --global-code-bg-color: #F9F8F4; /* 修改：程式碼背景同卡片 */
+  --global-navbar-text-color: #FFFFFF;     /* 導航列：一般文字顏色 (白色) */
+  --global-navbar-hover-color: #A0AEC0;   /* 導航列：滑鼠懸停顏色 (淺灰) */
+  --global-navbar-active-color: #217BF4;  /* 導航列：當前頁面顏色 (亮藍) */
 
   /* --- 品牌與主題顏色 --- */
   --global-theme-color: #2A4A6A; /* 修改：使用品牌深藍色 */
