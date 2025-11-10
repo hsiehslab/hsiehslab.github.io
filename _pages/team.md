@@ -1,8 +1,8 @@
 ---
 layout: page
-title: team
+title: TEAM
 permalink: /team/
-description: Short Description of Team Members
+description: Meet the people who makes magic happens
 nav: true
 nav_order: 5
 horizontal: false
