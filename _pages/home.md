@@ -39,5 +39,3 @@ latest_posts:
     </ul>
   </div>
 
-
-[meet the team](/about/).
