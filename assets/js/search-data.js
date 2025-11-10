@@ -31,8 +31,8 @@ ninja.data = [{
             window.location.href = "/projects/";
           },
         },{id: "nav-team",
-          title: "team",
-          description: "Short Description of Team Members",
+          title: "TEAM",
+          description: "Meet the people who makes magic happens",
           section: "Navigation",
           handler: () => {
             window.location.href = "/team/";
