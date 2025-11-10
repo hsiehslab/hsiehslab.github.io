@@ -1,6 +1,6 @@
 ---
 layout: about
-title: welcome
+title: WELCOME
 permalink: /
 nav: False
 
