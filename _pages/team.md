@@ -50,6 +50,10 @@ horizontal: false
 <a href="{{ link.url }}" class="text-decoration-none" target="_blank" title="Personal Website"><i class="fas fa-globe"></i></a>
     {% elsif link.type == 'linkedin' %}
 <a href="{{ link.url }}" class="text-decoration-none" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    {% elsif link.type == 'twitter' %}
+<a href="{{ link.url }}" class="text-decoration-none" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    {% elsif link.type == 'resume' %}
+<a href="{{ link.url }}" class="text-decoration-none" target="_blank" title="Resume"><i class="fab fa-file"></i></a>
     {% endif %}
 
   {% endfor %}
