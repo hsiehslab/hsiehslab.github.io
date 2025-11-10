@@ -2,14 +2,14 @@
 
 - name: Tzung-Chien Hsieh
   role: Principal Investigator
-  image_path: /assets/img/team/tchsieh.jpg
+  image_path: /assets/img/team/Hiseh.webp
   links:
     - type: email
-      url: "mailto:your-email@example.com"
+      url: "mailto:tzung.chien.hsieh@gmail.com"
     - type: google-scholar
-      url: "https://scholar.google.com/..."
+      url: "https://scholar.google.com/citations?user=XNXSgisAAAAJ"
     - type: github
-      url: "https://github.com/your-username"
+      url: "tzung.chien.hsieh@gmail.com"
     - type: website
       url: "https://your-personal-site.com"
 
