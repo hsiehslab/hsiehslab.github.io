@@ -9,7 +9,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "integratedphenomicslab/integratedphenomicslab.github.io",
+    "data-repo": "hsiehslab/hsiehslab.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
