@@ -2,7 +2,8 @@
 layout: default
 permalink: /news/
 title: NEWS
-nav: true
+published: false
+nav: false
 nav_order: 1
 pagination:
   enabled: true
