@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://integratedphenomicslab.github.io/sitemap.xml
+Sitemap: https://hsiehlab.github.io/sitemap.xml
