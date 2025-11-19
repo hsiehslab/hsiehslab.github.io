@@ -8,13 +8,6 @@ nav_order: 5
 horizontal: false
 ---
 
-{% assign roles_order = "Principal Investigator|Postdoctoral Researcher|PhD Student|Master Student|Research Assistant|Alumni" | split: "|" %}
-
-{% assign all_members = site.data.team %}
-
-{% for role in roles_order %}
-  {% assign members_in_role = all_members | where: "role", role %}
-  {% if members_in_role.size > 0 %}
 
 <h2 class="mt-4">{{ role }}</h2>
 <hr>
@@ -66,5 +59,3 @@ horizontal: false
   {% endfor %}
 
 </div> 
-  {% endif %} 
-{% endfor %}
