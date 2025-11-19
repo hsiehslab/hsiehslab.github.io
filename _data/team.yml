@@ -3,6 +3,7 @@
 - name: Dr. Tzung-Chien Hsieh
   role: Principal Investigator
   image_path: /assets/img/team/Hiseh.webp
+  profile_url: /team/Hsieh/
   links:
     - type: email
       url: "mailto:tzung.chien.hsieh@gmail.com"
@@ -16,6 +17,7 @@
 - name: Dr. Jing-Mei Li
   role: Researcher
   image_path: /assets/img/team/jane_doe.jpg
+  profile_url: /team/Li/
   links:
     - type: email
       url: "mailto:tzung.chien.hsieh@gmail.com"
