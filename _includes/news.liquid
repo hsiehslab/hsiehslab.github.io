@@ -16,13 +16,36 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
+            <td style="border: none; padding-bottom: 30px;">
+              
+              <div class="d-flex align-items-start">
+                
+                {% if item.img %}
+                  <div class="news-image mr-4" style="flex-shrink: 0; width: 120px; height: 120px;">
+                    <img src="{{ item.img | relative_url }}" 
+                         alt="news item" 
+                         class="img-fluid rounded" 
+                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                  </div>
+                {% endif %}
+                <div class="news-content d-flex flex-column" style="flex: 1;">
+                  
+                  <div class="news-date text-dark font-weight-bold mb-2" style="font-size: 16px;">
+                    {{ item.date | date: "%b %d, %Y" }}
+                  </div>
+
+                  <div class="news-description" style="font-size: 16px; color: #666; line-height: 1.6;">
+                    {% if item.inline %}
+                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                    {% else %}
+                      <a class="news-title" href="{{ item.url | relative_url }}" style="color: inherit; text-decoration: none;">
+                        {{ item.title }}
+                      </a>
+                    {% endif %}
+                  </div>
+
+                </div>
+              </div>
             </td>
           </tr>
         {% endfor %}
